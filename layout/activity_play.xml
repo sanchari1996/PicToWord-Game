@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#98f8f5">
+
+    <Button
+        android:layout_width="161dp"
+        android:layout_height="69dp"
+        android:text="Guess!!"
+        android:id="@+id/gbutton"
+        android:background = "@drawable/roundedbutton"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="enter" />
+
+    <EditText
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:layout_gravity="left|bottom"
+        android:visibility="invisible"
+        android:text="" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:id="@+id/ebutton"
+        android:layout_gravity="right|bottom"
+        android:visibility="invisible"
+        android:background = "@drawable/roundedbutton"
+        android:onClick="play" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/iv1"
+        android:src="@drawable/sample_0"
+        android:layout_gravity="left|top" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/iv3"
+        android:src="@drawable/sample_1"
+        android:layout_gravity="left|center_vertical" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/iv2"
+        android:src="@drawable/sample_2"
+        android:layout_gravity="right|top" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/iv4"
+        android:src="@drawable/sample_3"
+        android:layout_gravity="right|center_vertical" />
+
+    <Button
+        android:layout_width="86dp"
+        android:layout_height="64dp"
+        android:text="Next level"
+        android:id="@+id/nbutton"
+        android:layout_gravity="right|bottom"
+        android:visibility="invisible"
+        android:background = "@drawable/roundedbutton"
+        android:onClick="enterNext" />
+
+    <Button
+        android:layout_width="86dp"
+        android:layout_height="64dp"
+        android:text="Menu"
+        android:id="@+id/backbutton"
+        android:layout_gravity="left|bottom"
+        android:visibility="invisible"
+        android:background = "@drawable/roundedbutton"
+        android:onClick="back" />
+
+    <Button
+        android:layout_width="86dp"
+        android:layout_height="64dp"
+        android:text="Play Again"
+        android:id="@+id/pabutton"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background = "@drawable/roundedbutton"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="132dp"
+        android:layout_height="63dp"
+        android:text="next"
+        android:id="@+id/nextbutton"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="next"
+        android:background = "@drawable/roundedbutton"
+        android:visibility="invisible" />
+
+</FrameLayout>
